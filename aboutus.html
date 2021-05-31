@@ -15,6 +15,36 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <!--container here will keep everything within the width of the nav bar-->
+      <div class="container">
+        <!--toggle button-->
+        <button
+          class="navbar-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--for company logos etc-->
+        <a class="navbar-brand mr-auto" href="index.html"
+          >Ristorante Con Fusion</a
+        >
+        <div class="collapse navbar-collapse" id="Navbar"></div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./aboutus.html">About</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
@@ -32,7 +62,11 @@
 
     <div class="container">
       <div class="row">
-        <div>
+        <ol class="col-12 breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active"><a>About Us</a></li>
+        </ol>
+        <div class="col-12">
           <h3 class="about-page">About Us</h3>
           <hr />
         </div>

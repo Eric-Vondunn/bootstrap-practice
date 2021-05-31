@@ -15,6 +15,36 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <!--container here will keep everything within the width of the nav bar-->
+      <div class="container">
+        <!--toggle button-->
+        <button
+          class="navbar-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggle"></span>
+        </button>
+        <!--for company logos etc-->
+        <a class="navbar-brand mr-auto" href="index.html"
+          >Ristorante Con Fusion</a
+        >
+        <div class="collapse navbar-collapse" id="Navbar"></div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./aboutus.html">About</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!--New jumbotron for bootstrap 5-->
     <header class="bg-info p-5 rounded-lg m-3 text-white">
       <div class="container">
