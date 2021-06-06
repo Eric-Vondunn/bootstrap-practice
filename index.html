@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ristorante Con Fusion</title>
+    <title>Ristorante Con Fusion: About Us</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -18,11 +18,11 @@
     <link
       rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css"
-      <link
-      rel="stylesheet"
-      href="index.css"
     />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <!--container here will keep everything within the width of the nav bar-->
@@ -34,7 +34,7 @@
           data-toggle="collapse"
           data-target="#Navbar"
         >
-          <span class="navbar-toggle"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <!--for company logos etc-->
         <a class="navbar-brand mr-auto" href="index.html"
@@ -66,8 +66,7 @@
       </div>
     </nav>
 
-    <!--New jumbotron for bootstrap 5-->
-    <header class="bg-info p-5 rounded-lg m-3 text-white">
+    <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
           <div class="col-12 col-sm-6">
@@ -78,7 +77,18 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm"></div>
+          <!--image-->
+          <div class="col-12 col-sm-3 align-self-center">
+            <img src="img/logo.png" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-3 align-self-center">
+          <button
+            type="button"
+            class="btn btn-block btn-warning align-self-center"
+          >
+            Reserve Table
+          </button>
         </div>
       </div>
     </header>
@@ -91,27 +101,43 @@
         </div>
         <!--in xsml this will occupy 12 and stack on top. in sm it will occupy 8 and in md-xl it will occupy 9-->
         <div class="col col-sm order-sm-first col-md">
-          <h2>Uthappizza</h2>
-          <p>
-            A unique combination of Indian Uthappam (pancake) and Italian pizza,
-            topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia
-            onion, Guntur chillies and Buffalo Paneer.
-          </p>
+          <div class="media">
+            <img
+              class="d-flex mr-3 img-thumbnail align-self-center"
+              src="img/uthappizza.png"
+              alt="uthappizza"
+            />
+            <div class="media-body">
+              <h2 class="mt-0">
+                Uthappizza <span class="badge badge-danger">HOT</span>
+                <span class="badge badge-pill badge-secondary">$4.99</span>
+              </h2>
+              <p class="d-none d-sm-block">
+                A unique combination of Indian Uthappam (pancake) and Italian
+                pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
+                Vidalia onion, Guntur chillies and Buffalo Paneer.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
-          <h3>This Month's Promotions</h3>
-        </div>
-        <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p>
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+        <div class="media">
+          <div class="col-12 col-sm-4 col-md-3">
+            <h3>This Month's Promotions</h3>
+          </div>
+          <div class="media-body">
+            <div class="col col-sm col-md">
+              <h2>Weekend Grand Buffet</h2>
+              <p>
+                Featuring mouthwatering combinations with a choice of five
+                different salads, six enticing appetizers, six main entrees and
+                five choicest desserts. Free flowing bubbly and soft drinks. All
+                for just $19.99 per person
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -120,14 +146,23 @@
           <h3>Meet our Culinary Specialists</h3>
         </div>
         <div class="col col-sm order-sm-first col-md">
-          <h2>Alberto Somayya</h2>
-          <h4>Executive Chef</h4>
-          <p>
-            Award winning three-star Michelin chef with wide International
-            experience having worked closely with whos-who in the culinary
-            world, he specializes in creating mouthwatering Indo-Italian fusion
-            experiences.
-          </p>
+          <div class="media">
+            <img
+              class="d-flex mr-3 img-thumbnail align-self-center"
+              src="img/alberto.png"
+              alt="alberto"
+            />
+            <div class="media-body">
+              <h2 class="mt-0">Alberto Somayya</h2>
+              <h4>Executive Chef</h4>
+              <p class="d-none d-sm-block">
+                Award winning three-star Michelin chef with wide International
+                experience having worked closely with whos-who in the culinary
+                world, he specializes in creating mouthwatering Indo-Italian
+                fusion experiences.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
