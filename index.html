@@ -107,11 +107,22 @@
               src="img/uthappizza.png"
               alt="uthappizza"
             />
+            
             <div class="media-body">
-              <h2 class="mt-0">
-                Uthappizza <span class="badge badge-danger">HOT</span>
+              
+              <h2 class="mt-0" >
+                
+                Uthappizza 
+                <button type="button" class="btn btn-danger">
+                  HOT <span class="badge bg-danger">4</span>
+                </button>
+                <button type="button" class="btn btn-primary">
+                  $4.99 <span class="badge bg-secondary">4</span>
+                </button>
+                <span class="badge badge-danger">HOT</span>
                 <span class="badge badge-pill badge-secondary">$4.99</span>
               </h2>
+              
               <p class="d-none d-sm-block">
                 A unique combination of Indian Uthappam (pancake) and Italian
                 pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
@@ -124,12 +135,22 @@
 
       <div class="row row-content align-items-center">
         <div class="media">
+      
           <div class="col-12 col-sm-4 col-md-3">
-            <h3>This Month's Promotions</h3>
+            <h3>This Month's Promotions
+              
+            </h3>
           </div>
+          
           <div class="media-body">
+            
             <div class="col col-sm col-md">
-              <h2>Weekend Grand Buffet</h2>
+              <h2>Weekend Grand Buffet
+                <button type="button" class="btn btn-danger">
+                  NEW <span class="badge bg-danger">4</span>
+                </button>
+              </h2>
+              <img class="d-flex mr-3 img-thumbnail align-self-right" src="img/buffet.png" alt="buffet" />
               <p>
                 Featuring mouthwatering combinations with a choice of five
                 different salads, six enticing appetizers, six main entrees and
@@ -165,8 +186,72 @@
           </div>
         </div>
       </div>
-    </div>
+      
+    
+    <hr />
+    <div class="media"> 
+      <div class="col-12 col-sm-7 col-md-7 align-self-center"> 
+    
+      <div class="card">
+        <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+        <div class="card-body">
+          <div class="col-12 col-md-9">
+            <!--can manually make forms with form-group row-->
+            <form>
+              <label>Number of Guests</label>
+                <div class="form-check form-check-inline">
+                  
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                  <label class="form-check-label" for="inlineRadio4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                  <label class="form-check-label" for="inlineRadio3">5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                  <label class="form-check-label" for="inlineRadio6">6</label>
+                </div>
+              
+              
+              <!--Telephone start-->
+              <div class="form-group row">
+                <label for="telnum" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                <div class=" col-5 col-md-3">
+                  <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date" />
+                </div>
+                <div class="col-7 col-md-7">
+                  <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time" />
+                </div>
+          
+              </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <button type="button" class="btn btn-block btn-primary align-self-center">
+              Reserve Table
+            </button>
+          </div>
+              
 
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <hr />
+
+    
     <footer class="footer">
       <div class="container">
         <div class="row">
