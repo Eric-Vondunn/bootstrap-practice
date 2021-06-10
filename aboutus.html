@@ -23,24 +23,30 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <header> 
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <!--container here will keep everything within the width of the nav bar-->
       <div class="container">
         <!--toggle button-->
         <button
-          class="navbar-toggle"
+          class="navbar-bs-toggler"
+          role="button"
           type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#Navbar"
+          aria-controls="Navbar" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+          href="#Navbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <!--for company logos etc-->
         <a class="navbar-brand mr-auto" href="index.html"
-          >Ristorante Con Fusion</a
+          ><img src="img/logo.png" height="30" />Ristorante Con Fusion</a
         >
-        <div class="collapse navbar-collapse" id="Navbar"></div>
-        <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="Navbar"> 
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="./index.html"
               ><span class="fa fa-home fa-lg"></span>Home</a
@@ -62,8 +68,10 @@
             >
           </li>
         </ul>
+        </div>
       </div>
     </nav>
+    </header>
 
     <header class="jumbotron">
       <div class="container">
@@ -180,19 +188,19 @@
                     class="nav-link active"
                     href="#peter"
                     role="tab"
-                    data-toggle="tab"
+                    data-bs-toggle="tab"
                     >Peter Pan CEO</a
                   >
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#danny" role="tab" data-toggle="tab"
+                  <a class="nav-link" href="#danny" role="tab" data-bs-toggle="tab"
                     >Danny Witherspoon CFO</a
                   >
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#agume" role="tab" data-toggle="tab"
+                  <a class="nav-link" href="#agume" role="tab" data-bs-toggle="tab"
                     >Agume Tang CTO</a
                   >
                 </li>
@@ -202,7 +210,7 @@
                     class="nav-link"
                     href="#alberto"
                     role="tab"
-                    data-toggle="tab"
+                    data-bs-toggle="tab"
                     >Alberto Somayya Executive Chef</a
                   >
                 </li>
